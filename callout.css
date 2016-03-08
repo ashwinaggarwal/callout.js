@@ -137,6 +137,15 @@
 
 }
 
+.introjs-tooltipReferenceLayer .callout.introjs-tooltip .introjs-button {
+  text-shadow:none;
+  margin-top: 0px; 
+  background: none;
+  border:none;
+  padding: 0px;
+}
+
+
 .introjs-tooltipReferenceLayer .callout.introjs-tooltip .introjs-skipbutton.last {
   position: relative;
   width: 100%;
