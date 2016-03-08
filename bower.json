@@ -1,0 +1,27 @@
+{
+  "name": "callout",
+  "main": "callout.js",
+  "keywords": [
+    "calloutjs",
+    "introjs",
+    "popover",
+    "client",
+    "browser"
+  ],
+  "ignore": [
+    "docs",
+    "test",
+    "*.yml",
+    "CNAME",
+    "index.html",
+    "favicon.ico",
+    "CONTRIBUTING.md",
+    ".*",
+    "package.json",
+    "karma.*"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "intro.js": "introjs#^1.0.0"
+  }
+}

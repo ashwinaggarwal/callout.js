@@ -1,0 +1,19 @@
+{
+  "name": "callout.js",
+  "description": "Intuitive description about your websites with popovers and submenu to goto a specific step.",
+  "version": "0.0.1",
+  "author": "Ashwin Aggarwal <ashwinaggarwal7@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashwinaggarwal/callout.js"
+  },
+  "engine": [
+    "node >=0.1.90"
+  ],
+  "license": "MIT",
+  "main": "callout.js",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
