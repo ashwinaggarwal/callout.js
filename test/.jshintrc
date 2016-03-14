@@ -1,0 +1,18 @@
+{
+	"indent": 2,
+	"white": true,
+	"node": true,
+	"undef": true,
+	"unused": true,
+	"-W058": true,
+	"-W014": true,
+	"expr": true,
+	"globals" : {
+		"$": false,
+		"sinon" : false,
+		"document" : false,
+		"chai" : false,
+		"callout" : false
+	},
+	"mocha" : true
+}
