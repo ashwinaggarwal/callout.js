@@ -25,6 +25,11 @@
             this._exit();
         },
 
+        step : function(stepNo) {
+            if( stepNo ) this._startFromStepNumber(stepNo);
+            else return this._introJs._currentStep;
+        },
+
         _initialize : function(options) {
 
             this._options = $.extend(options,{
@@ -35,7 +40,9 @@
                 tooltipPosition : options.tooltipPosition || 'bottom',
                 showStepNumbers : options.showStepNumbers || false,
                 scrollToElement : options.scrollToElement || false,
-                events : options.events || {}
+                events : options.events || {},
+                nextLabel: options.nextLabel || 'Got it',
+                doneLabel: options.doneLabel || 'Done'
             });
 
             this._introJs = introJs();
@@ -132,6 +139,8 @@
                 e.preventDefault();
             });
 
+            this._fireEvent('onafterchange');
+
         },
 
         _renderSubMenu : function() {
@@ -198,7 +207,7 @@
         _prepareView : function() {
             var intro = this._introJs;
             try {
-                intro._introItems[intro._currentStep]._prepareView(intro._introItems[intro._currentStep],intro._direction);
+                intro._introItems[intro._currentStep].prepareView(intro._introItems[intro._currentStep],intro._direction);
             } catch (e) {
                 console.warn('prepare view is undefined for ' + intro._currentStep);
             }

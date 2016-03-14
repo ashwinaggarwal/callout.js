@@ -7,6 +7,13 @@
   color: #fff;
 }
 
+.callout .hide{
+  display: none;
+}
+
+.callout .show{
+  display: block;
+}
 
 .callout a{
   text-decoration: none;
@@ -15,6 +22,11 @@
 
 .callout .introjs-button{
   cursor: pointer;
+}
+
+.callout .introjs-button:hover{
+  border : none;
+  box-shadow: none;
 }
 
 .callout .introjs-button:active{
